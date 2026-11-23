@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17191b">
+  <title>LAST FUEL</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main id="game" aria-label="LAST FUEL game">
+    <canvas id="gameCanvas" aria-label="LAST FUEL 3D Martian environment"></canvas>
+    <div class="hud hud-brand">
+      <div class="brand">LAST FUEL</div>
+      <div class="sector">MARS · SECTOR 01</div>
+    </div>
+    <div class="hud hud-help">
+      <span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> MOVE</span>
+      <span><kbd>SHIFT</kbd> RUN</span>
+      <span><kbd>R</kbd> RESET</span>
+    </div>
+    <div class="hud hud-position" id="positionReadout">X 0.0 · Z 5.5</div>
+  </main>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

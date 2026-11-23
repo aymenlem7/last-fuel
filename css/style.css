@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+html, body {
+  width: 100%; height: 100%; margin: 0; overflow: hidden;
+  background: #17191b; color: #f4e9df;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+}
+#game { position: fixed; inset: 0; width: 100vw; height: 100vh; overflow: hidden; }
+#gameCanvas { display: block; width: 100%; height: 100%; outline: none; }
+.hud { position: absolute; z-index: 2; pointer-events: none; user-select: none;
+  text-shadow: 0 2px 8px #000b; }
+.hud-brand { top: 22px; left: 26px; }
+.brand { color: #f08d63; font-size: 15px; font-weight: 900; letter-spacing: .22em; }
+.sector { margin-top: 5px; color: #e4c6b5; font-size: 10px; letter-spacing: .16em; }
+.hud-help { left: 24px; bottom: 22px; display: flex; flex-wrap: wrap; gap: 16px;
+  color: #e9d8cd; font-size: 10px; font-weight: 750; letter-spacing: .1em; }
+.hud-help span { display: flex; align-items: center; gap: 4px; }
+kbd { min-width: 21px; padding: 5px 6px; border: 1px solid #d9a58c66;
+  border-radius: 5px; background: #151719cc; color: #fff1e8; text-align: center;
+  font: 700 10px/1 Consolas, monospace; }
+.hud-position { right: 24px; bottom: 25px; color: #e9c4b0; font: 11px Consolas, monospace;
+  letter-spacing: .08em; }
+@media (max-width: 560px) {
+  .hud-brand { top: 14px; left: 14px; }
+  .hud-help { left: 12px; bottom: 12px; gap: 7px; font-size: 9px; }
+  .hud-position { right: 12px; bottom: 48px; }
+  kbd { min-width: 18px; padding: 4px; }
+}
